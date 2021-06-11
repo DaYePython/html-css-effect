@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://picsum.photos/id/278/5616/3744") fixed no-repeat;
+  background-size: cover;
+}
+
+.login .login-form {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+  background: inherit;
+}

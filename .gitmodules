@@ -1,5 +1,5 @@
-[submodule "ex-xiaomi-shop"]
-	path = ex-gulp-learn
-	url = https://github.com/DaYePython/xiaomi-shop.git
 [submodule ".\\ex-gulp-learn\\"]
 	url = https://github.com/DaYePython/gulp-learn.git
+[submodule ".\\ex-xiaomi-shop\\"]
+	path = .\\ex-xiaomi-shop\\
+	url = https://github.com/DaYePython/xiaomi-shop.git

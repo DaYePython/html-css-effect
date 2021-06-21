@@ -44,12 +44,13 @@ html{
     scroll-behavior: smooth;
     font-family: Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
     outline: none;
+    padding:0;
 
 }
 
 body{
     width: 100%;
-    // min-height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -107,7 +108,7 @@ header{
 }
 
 section{
-    // display: block;
+    display: block;
 
 }
 
@@ -215,6 +216,36 @@ section{
     }
     #pre{
         left: 3rem;
+    }
+}
+
+.service{
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+        background:#f9f9f9;
+        border:.1rem solid rgba(0,0,0,.1);
+        border-radius: .5rem;
+        padding:2rem;
+        .box{
+            text-align: center;
+            flex:1 1 30rem;    
+
+            i{
+                font-size: 4rem;
+                color: $orange;
+            }
+            h3{
+                font-size: 2rem;
+                padding-top: 1rem;
+            }
+            p{
+                padding: 1rem 0;
+                font-size: 1.5rem
+            }
+        }
+
     }
 }
 

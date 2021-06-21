@@ -40,10 +40,12 @@ html {
   scroll-behavior: smooth;
   font-family: Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
   outline: none;
+  padding: 0;
 }
 
 body {
   width: 100%;
+  min-height: 100vh;
 }
 
 header {
@@ -88,6 +90,10 @@ header .icons a {
 
 header .icons a:hover {
   color: #ff941a;
+}
+
+section {
+  display: block;
 }
 
 .home {
@@ -203,6 +209,36 @@ header .icons a:hover {
 
 .home #pre {
   left: 3rem;
+}
+
+.service .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: #f9f9f9;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  padding: 2rem;
+}
+
+.service .box-container .box {
+  text-align: center;
+  flex: 1 1 30rem;
+}
+
+.service .box-container .box i {
+  font-size: 4rem;
+  color: #ff941a;
+}
+
+.service .box-container .box h3 {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.service .box-container .box p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
 }
 
 @keyframes sliderContent {

@@ -128,7 +128,7 @@ section{
 
             .content{
                 display: flex;
-                flex: 1 1 40rem;
+                flex: 1, 1, 40rem;
                 flex-direction: column;
                 animation: sliderContent .5s linear 1s backwards;
                 
@@ -148,6 +148,7 @@ section{
                     background-color: #fff;
                     padding: .8rem 3rem;
                     cursor: pointer;
+                    width: fit-content;
                     &:hover{
                         background-color: $orange;
                     }
@@ -230,7 +231,8 @@ section{
         padding:2rem;
         .box{
             text-align: center;
-            flex:1 1 30rem;    
+            flex:1 1 30rem;  
+            
 
             i{
                 font-size: 4rem;
@@ -242,7 +244,8 @@ section{
             }
             p{
                 padding: 1rem 0;
-                font-size: 1.5rem
+                font-size: 1.5rem;
+                width: fit-content; 
             }
         }
 
@@ -267,9 +270,9 @@ section{
     }
 }
 /* media queries  */
-section{
-    padding: 2rem 9%;
-}
+// section{
+//     padding: 2rem 9%;
+// }
 
 @media (max-width:991px){
 

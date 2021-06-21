@@ -116,7 +116,7 @@ section {
 
 .home .slider-container .slider .content {
   display: flex;
-  flex: 1 1 40rem;
+  flex: 1, 1, 40rem;
   flex-direction: column;
   animation: sliderContent .5s linear 1s backwards;
 }
@@ -137,6 +137,7 @@ section {
   background-color: #fff;
   padding: .8rem 3rem;
   cursor: pointer;
+  width: fit-content;
 }
 
 .home .slider-container .slider .content .btn:hover {
@@ -239,6 +240,7 @@ section {
 .service .box-container .box p {
   padding: 1rem 0;
   font-size: 1.5rem;
+  width: fit-content;
 }
 
 @keyframes sliderContent {
@@ -262,10 +264,6 @@ section {
 }
 
 /* media queries  */
-section {
-  padding: 2rem 9%;
-}
-
 @media (max-width: 991px) {
   html {
     font-size: 55%;

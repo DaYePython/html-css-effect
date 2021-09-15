@@ -9,31 +9,28 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <main class="page-content">
-        <div class="card">
-            <div class="card__content">
-                <h2 class="card__title">Mountain View</h2>
-                <p class="card__desc">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><button class="card__btn">View Trips</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__content">
-                <h2 class="card__title">To The Beach</h2>
-                <p class="card__desc">Plan your next beach trip with these fabulous destinations</p><button class="card__btn">View Trips</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__content">
-                <h2 class="card__title">Desert Destinations</h2>
-                <p class="card__desc">It's the desert you've always dreamed of</p><button class="card__btn">Book Now</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__content">
-                <h2 class="card__title">Explore The Galaxy</h2>
-                <p class="card__desc">Seriously, straight up, just blast off into outer space today</p><button class="card__btn">Book Now</button>
-            </div>
-        </div>
-    </main>
+    <form id="form">
+        <fieldset class="stars">
+          <input type="radio" name="stars" id="star1" ontouchstart="ontouchstart" />
+          <label class="fa fa-star" for="star1"></label>
+          <input type="radio" name="stars" id="star2" ontouchstart="ontouchstart" />
+          <label class="fa fa-star" for="star2"></label>
+          <input type="radio" name="stars" id="star3" ontouchstart="ontouchstart" />
+          <label class="fa fa-star" for="star3"></label>
+          <input type="radio" name="stars" id="star4" ontouchstart="ontouchstart" />
+          <label class="fa fa-star" for="star4"></label>
+          <input type="radio" name="stars" id="star5" ontouchstart="ontouchstart" />
+          <label class="fa fa-star" for="star5"></label>
+          <input type="radio" name="stars" id="star-reset" />
+          <label class="reset" for="star-reset">reset</label>
+          <figure class="face">
+              <i></i>
+              <i></i>
+              <u>
+                <div class="cover"></div>
+              </u>
+          </figure>
+        </fieldset>
+    </form>
 </body>
 </html>

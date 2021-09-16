@@ -101,7 +101,8 @@ body {
 
 .shell__icon {
   line-height: 40px;
-  font: 600 40px '';
+  font-size: 40px;
+  font-weight: bold;
   position: absolute;
   margin-left: .5em;
 }
@@ -109,7 +110,8 @@ body {
 .shell__title {
   position: relative;
   left: 4em;
-  font: 600 20px "";
+  font-size: 20px;
+  font-weight: bold;
   opacity: 0;
   transition: .1s;
 }

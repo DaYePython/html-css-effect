@@ -106,7 +106,10 @@ body{
 
     &__icon{
         line-height: 40px;
-        font: 600 40px '';
+        font: {
+            size: 40px;
+            weight: bold;
+        }
         position: absolute;
         margin-left: .5em;
         
@@ -118,7 +121,10 @@ body{
         // top: 23%;
         left: 4em;
         // transform: translateY(-50%);
-        font: 600 20px "";
+        font: {
+            size: 20px;
+            weight: bold;
+        }
         opacity: 0;
         transition: .1s;
     }

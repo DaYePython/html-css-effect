@@ -1,0 +1,16 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Picture Grid
+  link(rel='stylesheet', type='text/css', href='style/style.css')
+  link(href='https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css', rel='stylesheet')
+  link(href='https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css', rel='stylesheet')
+body.bg-gray-100
+  .shell.grid.p-5.gap-5.auto-cols-fr.auto-cols-auto(class="md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8")
+    - var n = 0
+    while n < 30
+      div.place-content-center.flex.rounded-2xl.relative
+        img.inline-block.w-full.h-full.align-middle(src=`https://iph.href.lu/200x200?text=${n}`)
+        span.absolute.top-2.left-6.shadow-md.text-5xl.font-sans= n++

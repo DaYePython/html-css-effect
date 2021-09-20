@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --duration: 700ms;
+  --effect: cubic-bezier(0.19, 1, 0.22, 1);
+  --progress-circle-color: #7C83FD;
+  --progress-circle-width: 8;
+}
+
+@keyframes circle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.progress__circle {
+  fill: none;
+  stroke: var(--progress-circle-color);
+  stroke-width: var(--progress-circle-width);
+  stroke-dasharray: 314;
+  stroke-linecap: round;
+  stroke-dashoffset: 314;
+  animation: calc(var(--duration)*8) var(--effect) circle forwards;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transform-box: fill-box;
+}

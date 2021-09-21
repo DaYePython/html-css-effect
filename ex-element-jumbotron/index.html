@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script>
+    
+        let firstPosition,lastPosition = document.scrollingElement.scrollTop;
+        let ticking = false;
+        let maxHeight = 507;
+
+        function doSomething(scroll_pos) {
+            let jumbotron = document.querySelector(".jumbotron-red");
+            // console.log(jumbotron);
+            console.log(lastPosition)
+            let height = lastPosition
+        // Do something with the scroll position
+        
+        }
+
+        window.addEventListener('scroll', function(e) {
+            lastPosition = window.scrollY;
+
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+            doSomething(lastPosition);
+            ticking = false;
+            });
+
+            ticking = true;
+        }
+        });
+
+            
+    </script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="jumbotron">
+          <img src="https://element-plus.gitee.io/static/theme-index-blue.8fbb67d.png" alt="" />
+        </div>
+        <div class="jumbotron-red">
+          <img src="https://element-plus.gitee.io/static/theme-index-red.5e43266.png" alt="" />
+        </div>
+      </div>
+</body>
+</html>
